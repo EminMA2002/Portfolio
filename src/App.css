@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #111013;
+}
+
+@font-face {
+    font-family: semibold;
+    src: url(../src/assets/fonts/Urbanist-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: bbold;
+    src: url(../src/assets/fonts/Urbanist-Bold.ttf);
+}
+
+@font-face {
+    font-family: Ebold;
+    src: url(../src/assets/fonts/Urbanist-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: bblack;
+    src: url(../src/assets/fonts/Urbanist-Black.ttf);
+}
+
+@font-face {
+    font-family: llight;
+    src: url(../src/assets/fonts/Urbanist-Light.ttf);
+}
+
+@font-face {
+    font-family: Elight;
+    src: url(../src/assets/fonts/Urbanist-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: tthin;
+    src: url(../src/assets/fonts/Urbanist-Thin.ttf);
+}
+
+@font-face {
+    font-family: regu;
+    src: url(../src/assets/fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: medi;
+    src: url(../src/assets/fonts/Urbanist-Medium.ttf);
+}

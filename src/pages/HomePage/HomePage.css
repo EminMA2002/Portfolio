@@ -1,0 +1,48 @@
+.HomePG{
+    padding: 0 110px;
+
+}
+
+.hello {
+    margin-top: 50px;
+    font-family: medi;
+    color: #A6ABB4;
+    font-size: 16px;
+}
+
+.creating {
+    margin-top: 45px;
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+}
+
+.letstalkbtn_text {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.letstalkbtn {
+    width: 200px;
+    height: 70px;
+    border-radius: 99px;
+    background-color: rgba(255, 255, 255, 0.277);
+    border: 0;
+    color: white;
+    font-family: medi;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.letstalktext {
+    width: 55%;
+ font-family: llight;
+ color: #A6ABB4;
+ font-size: 24px;   
+}

@@ -1,0 +1,33 @@
+.categoryfather{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+
+.categorytitle{
+    font-family: llight;
+    color: rgb(255, 255, 255);
+    font-size: 45px;    
+}
+
+.categorytext{
+    width: 100%;
+    font-family: llight;
+    color: #A6ABB4;
+    font-size: 18px;  
+}
+
+.categorynumber{
+    rotate: -90deg;
+    font-family: bblack;
+    font-size: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.391);
+    color: transparent;
+}
+
+.categorycontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,54 @@
+.ininsight{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.insightpost{
+    width: 100%;
+    height: 408px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.insightpost img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insightdate{
+    color: rgba(255, 255, 255, 0.514);
+    font-family: llight;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px
+}
+
+.insighttitle{
+ font-size: 22px;
+ font-family: medi;
+ color: white;
+ width: 100%;
+}
+
+.insighttag{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 99px;
+    padding: 10px 25px;
+    color: white;
+    font-family: semibold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.insighttags{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}

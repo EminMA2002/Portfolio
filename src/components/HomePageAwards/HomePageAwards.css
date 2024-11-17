@@ -1,0 +1,133 @@
+.homepgawards {
+    margin-top: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.homepgawardsupbg {
+    position: absolute;
+    width: 105%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    top: -20px;
+    background-color: #111013;
+    transition: all 0.1s ease;
+
+}
+
+.homepgawardsdown {
+    width: 100%;
+    height: 130vh;
+    background-color: #1C1B1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.homepgawardsdownchild {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: visible;
+}
+
+.homepgawardscontents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.homepgawardstitle {
+    display: block;
+    width: 20%;
+    font-family: medi;
+    font-size: 45px;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 100;
+}
+
+.homepgawardscontentleft{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform .5s ease;
+}
+
+.homepgawardscontent {
+    width: 80%;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.homepgawardscontenttitle {
+    position: relative;
+    font-family: regu;
+    z-index: 5;
+    font-size: 30px;
+}
+
+.homepgawardscontenttext {
+    position: relative;
+    z-index: 4;
+    font-size: 20px;
+    font-family: llight;
+    color: rgb(116, 116, 116);
+}
+
+.homepgawardscontent::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    transition: height .3s ease;
+    transform-origin: bottom;
+}
+
+.homepgawardscontent:hover::before {
+    content: "";
+    height: 100%;
+}
+
+.homepgawardscontent:hover .homepgawardscontentleft {
+    transform: translateX(20px);
+    z-index: 7;
+}
+
+.homepgawardscontent:hover .icontoabout {
+   color: #1C1B1E;
+}
+
+
+.homepgawardscontent:hover {
+    color: #111013;
+}
+
+.homepgawardscontentright{
+    z-index: 6;
+    color: white;
+}

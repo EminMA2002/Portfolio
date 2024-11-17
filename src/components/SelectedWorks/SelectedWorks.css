@@ -1,0 +1,93 @@
+.Selected{
+    padding: 0 110px;
+}
+
+.Selectedworkshead{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:70px;
+}
+
+.Selectedworkbtn{
+    width: 170px;
+    height: 70px;
+    border-radius: 99px;
+    background-color: transparent;
+    border: 1px solid #a6abb44e;
+    color: white;
+    font-family: medi;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Selectedworktile{
+    margin-top: 45px;
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.selected-works-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 100px;
+}
+
+.selected-works-card-1 {
+    z-index: 1;
+    position: sticky;
+    top: 10px; 
+    height: 95vh;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.selected-works-card-2 {
+    z-index: 2;
+    position: sticky;
+    top: 10px; 
+    height: 95vh;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.selected-works-card-3 {
+    z-index: 3;
+    position: sticky;
+    top: 10px; 
+    height: 95vh;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.selected-works-card-4 {
+    z-index: 4;
+    position: sticky;
+    top: 10px; 
+    height: 95vh;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cardphoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

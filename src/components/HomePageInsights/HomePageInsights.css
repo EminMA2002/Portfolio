@@ -1,0 +1,18 @@
+.insight{
+    padding: 0 110px;
+}
+
+.insightstitle{
+    margin-top: 45px;
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.insightscontent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+

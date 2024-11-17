@@ -1,0 +1,54 @@
+.HomeSliderDivFather{
+    width: 100%;
+    overflow: hidden;
+}
+
+.HomeSliderDiv {
+    display: flex;
+    gap: 70px;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    animation: marquee 22s infinite linear;
+height: 300px;
+display: flex;
+align-items: center;
+}
+
+.item1 {
+    flex-wrap: nowrap;
+padding: 70px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    rotate: 10deg;
+}
+
+.item2 {
+    rotate: -10deg;
+    flex-wrap: nowrap;
+    padding: 70px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+}
+
+.insideitem{
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    background-color: white;
+}
+
+.adobe{
+    color: rgba(255, 255, 255, 0.525);
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-2500px);
+    }
+}

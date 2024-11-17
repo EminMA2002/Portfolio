@@ -1,0 +1,41 @@
+.helpbrands{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 110px;
+
+}
+
+.helpbrandstitle{
+    margin-top: 45px;
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.helpbrandstext{
+    width: 55%;
+ font-family: llight;
+ color: #A6ABB4;
+ font-size: 20px;   
+}
+
+.helpbrandsbtn {
+    width: 190px;
+    height: 70px;
+    border-radius: 99px;
+    background-color: transparent;
+    border: 1px solid #a6abb44e;
+    color: white;
+    font-family: medi;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.helpbrandscategories{
+    display: flex;
+    gap: 40px;
+}
