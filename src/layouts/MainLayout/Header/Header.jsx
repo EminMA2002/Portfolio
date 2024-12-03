@@ -29,10 +29,18 @@ function Header() {
     }
 
     function clickMenu(){
-        setMenuNav({
-            padding: `10px 50px`,
-            width: "500px",
-        });
+        if(window.innerWidth < 500){
+            setMenuNav({
+                padding: `10px 50px`,
+                width: "100%",
+            });
+        }else{
+            setMenuNav({
+                padding: `10px 50px`,
+                width: "500px",
+            });
+        }
+
         setCloseMenu({
             display: "flex",
         });
