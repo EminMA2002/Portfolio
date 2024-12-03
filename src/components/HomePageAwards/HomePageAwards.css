@@ -30,10 +30,9 @@
 
 .homepgawardsdownchild {
     width: 100%;
-    margin-top: 200px;
     height: auto;
     min-height: 600px;
-    padding: 0 110px;
+    padding: 110px 110px;
     display: flex;
     justify-content: space-between;
     position: relative;
