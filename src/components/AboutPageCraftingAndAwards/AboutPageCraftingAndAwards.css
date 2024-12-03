@@ -1,0 +1,171 @@
+.APCAA{
+    background-color: #1C1B1E;
+}
+
+.CUS_Container{
+    padding: 120px 110px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.CUS_Left{
+    width: 20%;
+    font-family: medi;
+    font-size: 45px;
+    color: white;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    display: block;
+    height: fit-content;
+}
+
+.CUS_Right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 60%;
+}
+
+.CUSItem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CUSItemHead{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CUSItemIcon{
+    font-size: 30px;
+    color:rgba(255, 255, 255, 0.332);
+}
+
+.CUSItemCost{
+    font-family: medi;
+    font-size: 60px;
+    color: white;
+}
+
+.CUSItemTitle{
+    font-size: 22px;
+    font-family: semibold;
+    color:rgba(255, 255, 255, 0.332);
+}
+
+.CUSItemDesc{
+    font-family: llight;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.332);
+}
+
+
+.apLine{
+    display: flex;
+    justify-self: center;
+    width: 70%;
+    padding: 0 110px;
+    background-color: rgba(255, 255, 255, 0.084);
+    height: .8px;
+}
+
+.AR_Container{
+    padding: 120px 110px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.AR_Left{
+    width: 20%;
+    font-family: medi;
+    font-size: 45px;
+    color: white;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    display: block;
+    height: fit-content;
+}
+
+.AR_Right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 60%;
+}
+
+.ARItem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.ARItemTitle{
+    font-size: 35px;
+    font-family: semibold;
+    color:rgb(255, 255, 255);
+}
+
+.ARItemDesc{
+    font-family: llight;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.332);
+}
+
+.ARItemDate{
+    width: 35%;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 99px;
+    color: black;
+    font-family: medi;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+
+    .AR_Left, .CUS_Left{
+        position: static;
+        width: 100%;
+    }
+
+    .CUS_Container, .AR_Container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .CUS_Right, .AR_Right {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 770px) {
+    .AR_Right, .CUS_Right{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    .CUS_Container, .AR_Container{
+        padding: 120px 30px;}
+}

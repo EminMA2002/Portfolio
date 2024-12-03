@@ -1,0 +1,159 @@
+.aptitle{
+    padding: 0 110px;
+}
+
+.aptitle1_Container{
+    margin-top: 45px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.apPhoto{
+    width: 150px;
+    height: 90px;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.apImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aptitle1{
+    width: 350px;
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 95px;
+}
+
+.aptitle2{
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 95px;
+}
+
+.aptitleline{
+    width: 30%;
+    height: 1px;
+    background-color: white;
+}
+
+.aptitle2container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.aptext_Container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.aptext {
+    width: 52%;
+ font-family: llight;
+ color: #A6ABB4;
+ font-size: 24px;   
+}
+
+.apBigPhoto{
+    width: 100%;
+    height: 100vh;
+}
+
+.apBigImg{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .aptitle{
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 1007px) {
+
+    .aptitle2container{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .aptitle{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .aptitle{
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .aptitle1{
+        font-size: 55px;
+        width: 200px;
+    }
+    .aptitle2{
+        font-size: 55px;
+    }
+    .aptitle2container{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+   .aptitle1_Container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+   }
+    .aptext_Container{
+        justify-content: center;
+    }
+    .aptext{
+        width: 100%;
+    }
+    .aptitle{
+        padding: 0 30px;
+    }
+    .aptitle1{
+        font-size: 55px;
+        text-align: center;
+    }
+    .aptitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .aptitle2{
+        font-size: 55px;
+        text-align: center;
+    }
+    .aptitle2container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+
+    .aptitle1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .aptitle2{
+        font-size: 35px;
+        text-align: center;
+    }
+}

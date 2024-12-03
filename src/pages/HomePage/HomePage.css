@@ -14,14 +14,14 @@
     margin-top: 45px;
     font-family: medi;
     color: rgb(255, 255, 255);
-    font-size: 90px;
+    font-size: 95px;
 }
 
 .letstalkbtn_text {
     margin-top: 30px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
@@ -45,4 +45,39 @@
  font-family: llight;
  color: #A6ABB4;
  font-size: 24px;   
+}
+
+
+@media only screen and (max-width: 990px) {
+    .creating{
+        font-size: 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 830px) {
+    .creating{
+        font-size: 50px;
+    }
+    .letstalkbtn_text{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .letstalktext{
+        width: 100%;
+    }
+    .HomePG{
+        padding: 0 60px;
+    
+    }
+    
+}
+
+
+@media only screen and (max-width: 650px) {
+    .HomePG{
+        padding: 0 30px;
+    
+    }
 }

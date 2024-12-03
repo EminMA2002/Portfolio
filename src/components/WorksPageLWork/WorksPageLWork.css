@@ -1,0 +1,64 @@
+.wpLW{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* grid-column: span 2; */
+}
+
+.wpLWPhoto{
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpLWImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .6s ease;
+}
+
+.wpLWPhoto:hover .wpLWImg {
+    width: 110%;
+    height: 110%;
+}
+
+.wpLWPhoto::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.258);
+    content: "";
+}
+
+.wpLWTitle{
+    font-family: medi;
+    font-size: 35px;
+    color: white;
+}
+
+.wpLWTag{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 99px;
+    padding: 8px 16px;
+    color: white;
+    font-family: semibold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.wpLWTags{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}

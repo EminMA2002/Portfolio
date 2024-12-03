@@ -1,4 +1,3 @@
-import React from 'react'
 import "./SelectedWorks.css"
 import { HiArrowSmallRight } from "react-icons/hi2";
 import card1 from "../../assets/images/card1.png"
@@ -6,7 +5,7 @@ import card2 from "../../assets/images/card2.png"
 import card3 from "../../assets/images/card3.png"
 import card4 from "../../assets/images/card4.png"
 
-function SelectedWorks() {
+function SelectedWorks() {    
     return (
         <div className='Selected'>
             <div className="Selectedworkshead">

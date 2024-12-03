@@ -1,0 +1,65 @@
+.wpCategoriesContainer{
+    padding: 0 110px;
+}
+
+.wpCategories{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: medi;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.308);
+    gap: 20px;
+    margin-top: 70px;
+}
+
+.wpCategories a{
+    color: rgba(255, 255, 255, 0.308);
+}
+
+
+.wpPosts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 70px;
+    grid-column-gap:30px ;
+    margin-top: 70px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .wpCategoriesContainer{
+        padding: 0 60px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    .wpPosts{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, auto);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wpCategoriesContainer{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wpCategoriesContainer{
+        padding: 0 0px;
+    }
+    .wpCategories{
+        padding: 0 30px;
+        font-size: 16px;
+    }
+    .wpPosts{
+        padding: 0 30px;
+    }
+}

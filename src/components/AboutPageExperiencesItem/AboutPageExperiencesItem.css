@@ -1,0 +1,52 @@
+.experiencesItem{
+    width: 100%;
+    display: flex;
+    border-left: 1px solid rgba(255, 255, 255, 0.332);
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.experiencesItemId{
+    font-family: medi;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.332);
+}
+
+.experiencesItemTitle{
+    font-family: medi;
+    font-size: 35px;
+    color: white;
+}
+
+.experiencesItemJob{
+    font-family: regu;
+    font-size: 20px;
+    color: white;
+}
+
+.experiencesItemDate{
+    width: 70%;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 99px;
+    color: black;
+    font-family: medi;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencesItemDesc{
+    font-family: llight;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.332);
+}
+
+@media only screen and (max-width: 1200px) {
+    .apExperiencesdown {
+        padding: 120px 60px;
+    }
+}

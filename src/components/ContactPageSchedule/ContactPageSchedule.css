@@ -1,0 +1,242 @@
+.cpSchedule {
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.cpScheduleupbg {
+    position: absolute;
+    width: 105%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    top: -20px;
+    background-color: #111013;
+    transition: all 0.1s linear;
+
+}
+
+.cpScheduledown {
+    width: 100%;
+    background-color: #1C1B1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding: 120px 110px;
+}
+
+.cpScheduleChild {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cpScheduleLeft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cpScheduleLeftTitle {
+    font-size: 50px;
+    color: white;
+    font-family: medi;
+}
+
+.cpScheduleLeftText {
+    font-family: llight;
+    color: #A6ABB4;
+    font-size: 18px;
+}
+
+.cpScheduleLeftContainer {
+    padding: 48px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cpSchedulePhone,
+.cpScheduleMail,
+.cpScheduleAddress {
+    font-family: regu;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.198);
+    padding-bottom: 10px;
+}
+
+.cpScheduleLeftContainerA {
+    color: rgba(0, 0, 0, 0.196) !important;
+    min-width: 10%;
+}
+
+.cpScheduleRight{
+    width: 60%;
+    border-radius: 20px;
+    padding: 48px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cpScheduleRight input{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    font-family: medi;
+    color: rgba(0, 0, 0, 0.218);
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+    padding-left: 20px;
+}
+
+.interestedinTitle, .mybudgetTitle{
+    font-family: medi;
+    color: rgba(0, 0, 0, 0.218);
+    font-size: 18px;
+}
+
+.interestedinButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+
+}
+
+.mybudgetButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+.interestedinButtons button{
+    font-family: medi;
+    color: black;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+    background-color: transparent;
+}
+
+.mybudget, .interestedin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.mybudgetButtons button{
+    font-family: medi;
+    color: black;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+    background-color: transparent;
+}
+
+#messageinput{
+    height: 100px;
+}
+
+.submitmessage{
+    width: 300px;
+    background-color: black;
+    border: 0;
+    border-radius: 99px;
+    height: 70px;
+    font-size: 20px;
+    font-family: medi;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.submitmessagearrow{
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 1175px) {
+    .mybudgetButtons, .interestedinButtons{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .mybudgetButtons, .interestedinButtons{
+        grid-template-columns: repeat(4, auto);
+    }
+    .cpScheduleChild{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .cpScheduleLeft,  .cpScheduleRight{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cpScheduledown {
+        padding: 120px 60px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .cpScheduledown {
+        padding: 120px 30px;
+    } 
+}
+
+@media only screen and (max-width: 640px) {
+    .mybudgetButtons, .interestedinButtons{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media only screen and (max-width: 548px) {
+    .mybudgetButtons, .interestedinButtons{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .submitmessage{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+    .mybudgetButtons, .interestedinButtons{
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .submitmessage{
+        width: 100%;
+        font-size: 15px;
+    }
+    .cpScheduledown {
+        padding: 120px 10px;
+    } 
+}

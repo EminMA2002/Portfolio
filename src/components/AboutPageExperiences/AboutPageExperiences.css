@@ -1,0 +1,110 @@
+.apExperiences {
+    margin-top: 200px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.apExperiencesupbg {
+    position: absolute;
+    width: 105%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    top: -20px;
+    background-color: #111013;
+    transition: all 0.1s linear;
+
+}
+
+.apExperiencesdown {
+    width: 100%;
+    background-color: #1C1B1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding: 120px 110px;
+}
+
+.apExperiencesdownChild {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.apExperiencesdownLeft {
+    width: 20%;
+    font-family: medi;
+    font-size: 45px;
+    color: white;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    display: block;
+    height: fit-content;
+}
+
+.apExperiencesdownRight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    width: 60%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .apExperiencesdown {
+        padding: 120px 60px;
+    }
+
+    .apExperiencesdownRight {
+        width: 100%;
+    }
+
+    .apExperiencesdownLeft {
+        width: 40%;
+    }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .apExperiencesdownChild {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .apExperiencesdownLeft {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 770px) {
+
+    .apExperiencesdownChild {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .apExperiencesdownRight {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .apExperiencesdown {
+        padding: 120px 30px!important;
+    }
+}

@@ -1,0 +1,101 @@
+.cptitle {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 45px;
+    width: 100%;
+    padding: 0 110px;
+}
+
+.cptitle1 {
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 95px;
+}
+
+.cptitle2 {
+    font-family: medi;
+    color: rgb(255, 255, 255);
+    font-size: 95px;
+}
+
+.cptitleline {
+    width: 20%;
+    height: 1px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cptitle {
+        justify-content: center;
+    }
+
+    .cptitle{
+        padding: 0 60px;
+    }
+
+    .cptitle1 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 85px;
+
+    }
+
+    .cptitle2 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 85px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .cptitle {
+        justify-content: center;
+    }
+
+    .cptitle1 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+
+    }
+
+    .cptitle2 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .cptitle {
+        justify-content: center;
+    }
+
+    .cptitle{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .cptitle {
+        justify-content: center;
+    }
+
+    .cptitle{
+        padding: 0 60px;
+    }
+
+    .cptitle1 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+
+    }
+
+    .cptitle2 {
+        font-family: medi;
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+    }
+}
