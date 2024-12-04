@@ -9,13 +9,17 @@ function WorksPageCategories() {
         id: 1,
         image: "",
         name: "",
-        tools: [],
+        tools: [
+            "asdasdsad",
+            "dasdadad"
+        ],
         col: 1,
     }, {
         id: 1,
         image: "",
         name: "",
-        tools: [],
+        tools: [ "asdasdsad",
+            "dasdadad"],
         col: 2,
     }, {
         id: 1,
@@ -23,54 +27,20 @@ function WorksPageCategories() {
         name: "",
         tools: [],
         col: 2,
-    }, {
+    },
+    {
         id: 1,
         image: "",
         name: "",
         tools: [],
         col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-        key:"frontend"
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-    }]
+        key: "frontend"
+    }
+    ]
 
 
 
-    const [query,setQuery] = useState("all");
+    const [query, setQuery] = useState("all");
 
 
 
@@ -78,17 +48,17 @@ function WorksPageCategories() {
     return (
         <div className='wpCategoriesContainer'>
             <div className='wpCategories'>
-                <Link>All</Link>
+                <Link onClick={() => setQuery("all")}>All</Link>
                 <div className='tendency'>/</div>
-                <Link onClick={() => setQuery("frontend")}>Branding</Link>
+                <Link onClick={() => setQuery("branding")}>Branding</Link>
                 <div className='tendency'>/</div>
-                <Link>UI/UX</Link>
+                <Link onClick={() => setQuery("webdesign")}>UI/UX</Link>
                 <div className='tendency'>/</div>
-                <Link>App Design</Link>
+                <Link onClick={() => setQuery("posts")}>Ads Posts</Link>
             </div>
             < div className='wpPosts'>
                 {
-                    works.filter(work =>  query === "all" ? true : work.key === query).map(work => <WorksPageLWork data={work} />)
+                    works.filter(work => query === "all" ? true : work.key === query).map(work => <WorksPageLWork data={work} />)
                 }
             </div>
         </div>
