@@ -1,11 +1,16 @@
 import styles from "./Header.module.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 
 function Header() {
+
+    const data = useLocation()
+    console.log(data);
+    
+
     const [menuNav, setMenuNav] = useState({
         padding: `0`,
         width: "0",
@@ -57,10 +62,10 @@ function Header() {
                 <Link to="/" >Brilio.</Link>
             </div>
             <div className={styles.headerright}>
-                <Link to="/" >Home</Link>
-                <Link to="/works" >Works</Link>
-                <Link to="/about" >About</Link>
-                <Link to="/contact" >Contact</Link>
+                <Link to="/" style={data.pathname == "/" ? {color:"#a6abb44e"} : {color: "white"}} >Home</Link>
+                <Link to="/works" style={data.pathname == "/works" ? {color:"#a6abb44e"} : {color: "white"}}> Works</Link>
+                <Link to="/about" style={data.pathname == "/about" ? {color:"#a6abb44e"} : {color: "white"}}>About</Link>
+                <Link to="/contact" style={data.pathname == "/contact" ? {color:"#a6abb44e"} : {color: "white"}}>Contact</Link>
             </div>
             <button onClick={clickMenu} className={styles.Menu}>Menu</button>
         </div>
@@ -70,10 +75,10 @@ function Header() {
                 <button onClick={handleMenu} className={styles.naviX} style={closeMenu}><AiOutlineClose className={styles.xicon} /></button>
             </div>
             <div onClick={handleMenu} className={styles.navicontent}>
-                <Link to="/" >Home</Link>
-                <Link to="/works" >Works</Link>
-                <Link to="/about" >About</Link>
-                <Link to="/contact" >Contact</Link>
+                <Link to="/" style={data.pathname == "/" ? {color:"#a6abb44e"} : {color: "white"}}>Home</Link>
+                <Link to="/works" style={data.pathname == "/works" ? {color:"#a6abb44e"} : {color: "white"}}>Works</Link>
+                <Link to="/about" style={data.pathname == "/about" ? {color:"#a6abb44e"} : {color: "white"}}>About</Link>
+                <Link to="/contact" style={data.pathname == "/contact" ? {color:"#a6abb44e"} : {color: "white"}}>Contact</Link>
             </div>
             <div className={styles.navisocialstext}>Socials</div>
             <div className={styles.navisocials}>

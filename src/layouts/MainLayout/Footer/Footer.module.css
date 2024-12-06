@@ -20,6 +20,7 @@
 }
 
 .FTitle {
+    text-align: center;
     font-family: medi;
     color: white;
     font-size: 65px;
@@ -51,6 +52,12 @@
     border-radius: 99px;
     background-color: rgba(255, 255, 255, 0.277);
     border: 0;
+    overflow: hidden;
+}
+
+.FBTn a{
+    height: 100%;
+    width: 100%;
     color: white;
     font-family: medi;
     font-size: 16px;

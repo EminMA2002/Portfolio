@@ -12,7 +12,7 @@ function Footer() {
             <div className={styles.FTitleSecBTN}>
                 <div className={styles.FTitleSec}>Together</div>
                 <div className={styles.FLine}></div>
-                <button className={styles.FBTn}>Get In Toucn! <HiArrowSmallRight /></button>
+                <button className={styles.FBTn}><Link to="/contact">Get In Toucn! <HiArrowSmallRight /> </Link></button>
             </div>
         </div>
         <div className={styles.FSocials}>

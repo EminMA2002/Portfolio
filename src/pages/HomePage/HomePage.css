@@ -3,6 +3,29 @@
 
 }
 
+.first_BG{
+    position: absolute;
+    left: 0;
+    top: -200px;
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+}
+
+.first_BG img{
+    opacity: 0.15;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    animation: rotateAni 10s infinite linear;
+}
+
+@keyframes rotateAni {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+
 .hello {
     margin-top: 50px;
     font-family: medi;
@@ -23,21 +46,6 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-}
-
-.letstalkbtn {
-    width: 200px;
-    height: 70px;
-    border-radius: 99px;
-    background-color: rgba(255, 255, 255, 0.277);
-    border: 0;
-    color: white;
-    font-family: medi;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 .letstalktext {

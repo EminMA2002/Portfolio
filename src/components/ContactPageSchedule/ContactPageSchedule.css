@@ -124,6 +124,8 @@
 }
 
 .interestedinButtons button{
+    cursor: pointer;
+
     font-family: medi;
     color: black;
     font-size: 16px;
@@ -142,6 +144,7 @@
 
 
 .mybudgetButtons button{
+    cursor: pointer;
     font-family: medi;
     color: black;
     font-size: 16px;
@@ -156,6 +159,7 @@
 }
 
 .submitmessage{
+    cursor: pointer;
     width: 300px;
     background-color: black;
     border: 0;

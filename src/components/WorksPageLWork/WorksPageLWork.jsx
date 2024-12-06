@@ -4,10 +4,13 @@ import card1 from "../../assets/images/card1.png"
 import card2 from "../../assets/images/card2.png"
 import card3 from "../../assets/images/card3.png"
 import card4 from "../../assets/images/card4.png"
+import { useNavigate, useNavigation } from 'react-router-dom'
 
 function WorksPageLWork({ data }) {
+  const navigate = useNavigate()
+
   return (
-    <div className='wpLW' style={{ gridColumn: `span ${data.col}` }}>
+    <div onClick={()=>navigate(`/product/${data.id}`)} className='wpLW' style={{ gridColumn: `span ${data.col}` }}>
       <div className='wpLWPhoto'>
         <img className='wpLWImg' src={card1} />
       </div>

@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage/HomePage"
 import WorksPage from "./pages/WorksPage/WorksPage"
 import AboutPage from "./pages/AboutPage/AboutPage"
 import ContactPage from "./pages/ContactPage/ContactPage"
+import ProductPage from "./pages/ProductPage/ProductPage"
 
 // Layouts
 import MainLayout from "./layouts/MainLayout/MainLayout";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/works" element={<WorksPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Route>
     </Routes>
   </BrowserRouter>

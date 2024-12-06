@@ -39,7 +39,7 @@ function AboutPageFAQ() {
                 FAQsData.map((FAQ, index) => (
                     <div className='FAQChild' key={index}>
                         <div onClick={() => toggleFaq(index)} className='FAQHead'>{FAQ.question} <div>{openFaq === index ? "-" : "+"}</div> </div>
-                        <div className='FAQAnswer' style={{maxHeight: openFaq === index ? "50px" : "0", transition: "max-height .5s ease"}}>{FAQ.answer}</div>
+                        <div className='FAQAnswer' style={{maxHeight: openFaq === index ? "70px" : "0", transition: "max-height .5s ease"}}>{FAQ.answer}</div>
                     </div>
                 ))
             }

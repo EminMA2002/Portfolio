@@ -2,43 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./WorksPageCategories.css"
 import WorksPageLWork from '../WorksPageLWork/WorksPageLWork';
-// import WorksPageBWork from '../WorksPageBWork/WorksPageBWork';
+import {works} from '../DataBase/DataBase';
 
 function WorksPageCategories() {
-    const works = [{
-        id: 1,
-        image: "",
-        name: "",
-        tools: [
-            "asdasdsad",
-            "dasdadad"
-        ],
-        col: 1,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [ "asdasdsad",
-            "dasdadad"],
-        col: 2,
-    }, {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 2,
-    },
-    {
-        id: 1,
-        image: "",
-        name: "",
-        tools: [],
-        col: 1,
-        key: "frontend"
-    }
-    ]
-
-
 
     const [query, setQuery] = useState("all");
 
@@ -48,13 +14,13 @@ function WorksPageCategories() {
     return (
         <div className='wpCategoriesContainer'>
             <div className='wpCategories'>
-                <Link onClick={() => setQuery("all")}>All</Link>
+                <Link onClick={() => setQuery("all")} style={query == "all" ? {color:"white"} : {color: "#a6abb44e"}}>All</Link>
                 <div className='tendency'>/</div>
-                <Link onClick={() => setQuery("branding")}>Branding</Link>
+                <Link onClick={() => setQuery("branding")} style={query == "branding" ? {color:"white"} : {color: "#a6abb44e"}}>Branding</Link>
                 <div className='tendency'>/</div>
-                <Link onClick={() => setQuery("webdesign")}>UI/UX</Link>
+                <Link onClick={() => setQuery("webdesign")} style={query == "webdesign" ? {color:"white"} : {color: "#a6abb44e"}}>UI/UX</Link>
                 <div className='tendency'>/</div>
-                <Link onClick={() => setQuery("posts")}>Ads Posts</Link>
+                <Link onClick={() => setQuery("posts")} style={query == "posts" ? {color:"white"} : {color: "#a6abb44e"}}>Ads Posts</Link>
             </div>
             < div className='wpPosts'>
                 {

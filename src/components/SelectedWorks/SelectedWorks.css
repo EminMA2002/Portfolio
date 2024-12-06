@@ -17,6 +17,12 @@
     border-radius: 99px;
     background-color: transparent;
     border: 1px solid #a6abb44e;
+    overflow: hidden;
+}
+
+.Selectedworkbtn a{
+    width: 100%;
+    height: 100%;
     color: white;
     font-family: medi;
     font-size: 16px;
@@ -84,6 +90,47 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.selected-works-card-4::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6055672268907564) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.selected-works-card-3::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6055672268907564) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.selected-works-card-2::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6055672268907564) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.selected-works-card-1::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6055672268907564) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .cardphoto {
@@ -92,6 +139,40 @@
     object-fit: cover;
 }
 
+.selected_card_title {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.selected_card_text {
+    font-family: medi;
+    color: white;
+    font-size: 30px;
+}
+
+.selected_card_tags {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.selected_card_tag {
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 99px;
+    color: white;
+    font-family: semibold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
 
 @media only screen and (max-width: 990px) {
     .Selectedworkshead {
@@ -112,11 +193,11 @@
 }
 
 @media only screen and (max-width: 830px) {
-    .Selected{
+    .Selected {
         padding: 0 60px;
-    
+
     }
-    
+
 }
 
 
@@ -125,8 +206,11 @@
         padding: 0 30px;
     }
 
-    .selected-works-card-1, .selected-works-card-2, .selected-works-card-3, .selected-works-card-4{
+    .selected-works-card-1,
+    .selected-works-card-2,
+    .selected-works-card-3,
+    .selected-works-card-4 {
         height: 60vh;
     }
-    
+
 }
